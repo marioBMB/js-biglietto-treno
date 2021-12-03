@@ -1,0 +1,106 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    background: url(img/background.png);
+    background-size: 32%;
+    z-index: 1;
+    position: relative;
+    top: 0;
+}
+
+
+.overlay {
+    position: fixed; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.4); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  }
+
+.container {
+    margin: 0 auto;
+    min-width: 400px;
+    max-width: 1100px;
+    background-color: rgba(175,175,175, 0.9);
+    padding: 40px;
+    border: 5px dashed maroon;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+}
+
+.d-iblock {
+    display: inline-block;
+    margin: 20px;
+}
+
+.d-iblock img{
+    vertical-align: top;
+}
+
+header {
+}
+
+header div, header div img {
+    height: 100%;
+}
+
+.t-top {
+    transform: translateY(-80%);
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h2, h3 {
+    margin: 20px 0;
+}
+
+main {
+    position: relative;
+}
+
+.breadcrumb {
+    background-color: rgba(255,255,255, 0.5);
+    padding: 5px 20px;
+    color: grey;
+    font-variant: small-caps;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    border-radius: 10px;
+    text-transform: lowercase;
+    font-size: 1rem;
+}
+
+
+h1, .breadcrumb .arrow {
+    color: maroon;
+}
+
+#message {
+    margin: 40px 0;
+    font-size: 1.4rem;
+}
